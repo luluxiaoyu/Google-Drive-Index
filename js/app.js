@@ -12,7 +12,7 @@ function init() {
 <div id="content">
 </div>
 <br>
-<footer class="text-muted"> <div class="container"> <p class="float-right"> <a href="#">返回顶部</a> </p> ${UI.credit ? '<p>Redesigned by <a href="https://github.com/ParveenBhadooOfficial/Bhadoo-Drive-Index" target="_blank">ParveenBhadooOfficial</a>Chinese localization by<a href="https://github.com/luluxiaoyu/Google-Drive-Index/" target="_blank">luluxiaoyu</a> </p>' : ''} <p>© ${UI.copyright_year} - <a href=" ${UI.company_link}" target="_blank"> ${UI.company_name}</a>, All Rights Reserved.</p> </div> </footer>
+<footer class="text-muted"> <div class="container"> <p class="float-right"> <a href="#">返回顶部</a> </p> ${UI.credit ? '<p>Redesigned by <a href="https://github.com/ParveenBhadooOfficial/Bhadoo-Drive-Index" target="_blank">ParveenBhadooOfficial</a> Chinese localization by <a href="https://github.com/luluxiaoyu/Google-Drive-Index/" target="_blank">luluxiaoyu</a> </p>' : ''} <p>© ${UI.copyright_year} - <a href=" ${UI.company_link}" target="_blank"> ${UI.company_name}</a>, All Rights Reserved.</p> </div> </footer>
   `;
 	$('body').html(html);
 }
