@@ -2,9 +2,9 @@
 * A Script Redesigned by Parveen Bhadoo from GOIndex at https://github.com/ParveenBhadooOfficial/Bhadoo-Drive-Index
 */
 const authConfig = {
-	"siteName": "Bhadoo Drive Index", // Website name
-	"client_id": "58094879805-4654k2k5nqdid5bavft7fvea5u9po0t1.apps.googleusercontent.com",
-	"client_secret": "ZNPZ-vS6N9Zjsyb_sNMZmXHL",
+	"siteName": "Drive Index", // Website name
+	"client_id": "202264815644.apps.googleusercontent.com",
+	"client_secret": "X4Z3ca8xfWDb1Voo-F9a7ZxJ",
 	"refresh_token": "", // Authorize token
 	/**
 	 * Set up multiple Drives to display; add multiples by format
@@ -20,7 +20,7 @@ const authConfig = {
 	 * [Note] For the disk whose id is set to the subfolder id, the search function will not be supported (it does not affect other disks).
 	 */
 	"roots": [{
-		"id": "",
+		"id": "root",
 		"name": "Drive Index",
 		"user": "",
 		"pass": "",
@@ -57,19 +57,19 @@ const authConfig = {
 const uiConfig = {
 	"theme": "bhadoo_bootstrap", // Change doesn't works
 	"dark_mode": true, // switch between light or dark themes
-	"version": "2.0.7", // don't touch this one. get latest code using generator at https://github.com/ParveenBhadooOfficial/Bhadoo-Drive-Index
+	"version": "2.0.7.3", // don't touch this one. get latest code using generator at https://github.com/ParveenBhadooOfficial/Bhadoo-Drive-Index
 	"logo_image": false, // true if you're using image link in next option.
 	"logo_height": "", // only if logo_image is true
 	"logo_width": "100px", // only if logo_image is true
-	"logo_link_name": "Bhadoo Drive Index", // if logo is true then link otherwise just text for name
-	"contact_link": "https://t.telegram.ind.in/BhadooCloud", // Link to Contact Button on Menu
-	"copyright_year": "2050", // year of copyright, can be anything like 2015 - 2020 or just 2020
-	"company_name": "Bhadoo Cloud", // Name next to copyright
-	"company_link": "https://t.telegram.ind.in/BhadooCloud", // link of copyright name
+	"logo_link_name": "云资源库", // if logo is true then link otherwise just text for name
+	"contact_link": "https://drive.dnxshare.xyz", // Link to Contact Button on Menu
+	"copyright_year": "2018-2021", // year of copyright, can be anything like 2015 - 2020 or just 2020
+	"company_name": "Dnxshare", // Name next to copyright
+	"company_link": "https://www.dnxshare.cn", // link of copyright name
 	"credit": true, // Set this to true to give us credit
 	"display_size": true, // Set this to false to hide display file size
 	"display_time": false, // Set this to false to hide display modified time for folder and files
-        "disable_player": false // Set this to true to hide audio and video players
+    "disable_player": false // Set this to true to hide audio and video players
 };
 
 /**
@@ -123,19 +123,19 @@ function html(current_drive_order = 0, model = {}) {
     window.current_drive_order = ${current_drive_order};
     window.UI = JSON.parse('${JSON.stringify(uiConfig)}');
   </script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/Bhadoo-Drive-Index@${uiConfig.version}/css/mdui-style.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/luluxiaoyu/Google-Drive-Index@${uiConfig.version}/css/mdui-style.min.css">
   <script src="https://cdn.jsdelivr.net/combine/gh/jquery/jquery@3.2/dist/jquery.min.js"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/3.2.4/mediaelementplayer.css" rel="stylesheet" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/3.2.4/mediaelement-and-player.min.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/Bhadoo-Drive-Index@${uiConfig.version}/css/bootstrap/${uiConfig.dark_mode ? 'dark' : 'light'}.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/luluxiaoyu/Google-Drive-Index@${uiConfig.version}/css/bootstrap/${uiConfig.dark_mode ? 'dark' : 'light'}.min.css">
   <style>${uiConfig.display_size ? '' : '.csize{display:none;}'}${uiConfig.display_time ? '' : '.cmtime{display:none;}'}</style>
-  <script src="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/Bhadoo-Drive-Index@${uiConfig.version}/js/app.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/Bhadoo-Drive-Index@${uiConfig.version}/js/mdui.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/luluxiaoyu/Google-Drive-Index@${uiConfig.version}/js/app.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/luluxiaoyu/Google-Drive-Index@${uiConfig.version}/js/mdui.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/markdown-it@10.0.0/dist/markdown-it.min.js"></script>
 </head>
 <body>
 </body>
-<script src="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/Bhadoo-Drive-Index@${uiConfig.version}/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/luluxiaoyu/Google-Drive-Index@${uiConfig.version}/js/bootstrap.min.js"></script>
 </html>`;
 };
 
